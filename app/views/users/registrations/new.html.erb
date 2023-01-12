@@ -20,7 +20,19 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
+  <div class="field">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+</div>
 
+<div class="field">
+  <%= f.label :age %><br />
+  <%= f.number_field :age %>
+</div>
+<div class="field" style="margin-bottom: 4px;">
+  <%= f.label :avatar, style: "display: block" %>
+  <%= f.file_field :avatar %>
+</div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
