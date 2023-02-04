@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_12_004944) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_04_031944) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -44,6 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_12_004944) do
     t.integer "number_of_pages"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "detail"
   end
 
   create_table "users", force: :cascade do |t|

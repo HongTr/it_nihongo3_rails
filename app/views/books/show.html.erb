@@ -8,6 +8,9 @@
   </p>
   <%= link_to "Edit this book", edit_book_path(@book) %> |
   <%= link_to "Back to books", books_path %>
-
+  <p>
+  <strong>Detail:</strong>
+  <%= @book.detail %>
+</p>
   <%= button_to "Destroy this book", @book, method: :delete %>
 </div>
